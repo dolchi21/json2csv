@@ -176,7 +176,7 @@ The programatic APIs take a configuration object very equivalent to the CLI opti
 - `ndjson` - Only effective on the streaming API. Indicates that data coming through the stream is NDJSON.
 - `transforms` - Array of transforms to be applied to each data item. A transform is simply a function that receives a data item and returns the transformed item.
 - `defaultValue` - String, default value to use when missing data. Defaults to `<empty>` if not specified. (Overridden by `fields[].default`)
-- `quote` - String, quote around cell values and column names. Defaults to `"` if not specified.
+- `quotes` - String, quote around cell values and column names. Defaults to `"` if not specified.
 - `escapedQuote` - String, the value to replace escaped quotes in strings. Defaults to 2x`quotes` (for example `""`) if not specified.
 - `delimiter` - String, delimiter of columns. Defaults to `,` if not specified.
 - `eol` - String, overrides the default OS line ending (i.e. `\n` on Unix and `\r\n` on Windows).
